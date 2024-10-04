@@ -1,0 +1,71 @@
+/* Estilo para el cuerpo, con imagen de fondo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('paisaje.png'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* La imagen cubrirá toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    color: rgb(50, 172, 13); /* Texto en blanco para mejor contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+}
+
+/* Contenedor general centrado */
+.container {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para la tabla, centrada y con espacio entre columnas */
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-spacing: 15px; /* Espacio entre las columnas */
+}
+
+/* Estilo para las imágenes dentro de la tabla */
+.image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los campos de entrada y selección */
+.input-group input, 
+.input-group select {
+    padding: 10px;
+    margin-right: 10px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Estilo del botón de cálculo */
+button {
+    padding: 10px 20px;
+    background-color: #FFC107; /* Amarillo brillante para destacar */
+    border: none;
+    border-radius: 5px;
+    color: #003366; /* Azul fuerte en el texto del botón */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFA000; /* Color más oscuro al pasar el cursor */
+}
+
+/* Resultado de la corriente en mA */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

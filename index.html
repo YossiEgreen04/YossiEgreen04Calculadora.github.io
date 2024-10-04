@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Corriente</title>
+    <link rel="stylesheet" href="estilos.css"> 
+</head>
+<body>
+    <h2>Cálculo de Corriente</h2>
+    <div class="container">
+        <table>
+            <tr>
+                <td>
+                    <img src="Voltaje.png" alt="Imagen de resistencia" class="image"> 
+                </td>
+                <td>
+                    <div class="input-container">
+                        <label for="resistencia">Valor de la Resistencia:</label>
+                        <div class="input-group">
+                            <input type="number" id="resistencia" placeholder="Ingresa el valor">
+                            <select id="unidad">
+                                <option value="ohm">Ohmios</option>
+                                <option value="kilohm">Kiloohmios</option>
+                            </select>
+                        </div>
+                        <button onclick="calcularCorriente()">Calcular</button>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="result" id="resultado"></div>
+    </div>
+
+    <script src="calcularResistencia.js"></script> 
+</body>
+</html>
